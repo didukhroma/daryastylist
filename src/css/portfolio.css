@@ -9,6 +9,7 @@
 .portfolio-list {
   margin-bottom: 56px;
   width: 100%;
+
   display: grid;
   grid-template-columns: repeat(2, 156px);
   grid-auto-flow: row;
@@ -18,9 +19,13 @@
   border-radius: 4px;
   overflow: hidden;
 }
+.portfolio-list-item:nth-child(odd) {
+  grid-row: auto / span 2;
+}
 .large {
   grid-row: auto / span 2;
 }
+
 .button {
   display: inline-block;
 
