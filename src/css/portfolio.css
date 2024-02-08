@@ -1,0 +1,50 @@
+.portfolio {
+  padding: 44px 0 104px;
+  background-color: var(--light-color);
+}
+.section-title-portfolio {
+  margin-bottom: 48px;
+}
+
+.portfolio-list {
+  margin-bottom: 56px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 156px);
+  grid-auto-flow: row;
+  gap: 16px;
+}
+.set-img-wrapper {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.large {
+  grid-row: auto / span 2;
+}
+.button {
+  display: inline-block;
+
+  width: 100%;
+  padding: 16px 24px;
+  border: 1px solid var(--active-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: rgb(210, 201, 190);
+  background-color: var(--active-color);
+
+  font-family: var(--secondary-font-family);
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.35);
+}
+.button:focus {
+  outline-offset: 4px;
+  outline-color: var(--active-color);
+}
+.button:active {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

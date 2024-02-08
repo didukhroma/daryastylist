@@ -1,0 +1,18 @@
+.about-section {
+  padding: 88px 0 124px;
+}
+
+.img-wrapper {
+  min-width: 351px;
+  margin-bottom: 24px;
+  background-color: var(--placeholder-img-color);
+}
+.about-list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.about-list-description {
+  color: var(--about-light-text-color);
+  font-family: var(--secondary-font-family);
+  font-size: 14px;
+  line-height: 1.21;
+}

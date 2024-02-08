@@ -1,10 +1,12 @@
 .hero {
+}
+.hero-wrapper {
   padding: 393px 0 340px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../img/hero/hero.jpg') center / cover no-repeat;
 }
 .hero-description {
-  color: var(--hero-light-color);
+  color: var(--hero-light-text-color);
   font-family: var(--main-font-family);
   font-style: italic;
   font-size: 20px;
