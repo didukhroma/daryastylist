@@ -54,3 +54,39 @@ body {
 .section-title-dark {
   color: var(--dark-color);
 }
+/**
+  |============================
+  | BUTTON
+  |============================
+*/
+.button {
+  display: inline-block;
+
+  width: 100%;
+  padding: 16px 24px;
+  border: 1px solid var(--active-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: rgb(210, 201, 190);
+  background-color: var(--active-color);
+
+  font-family: var(--secondary-font-family);
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
+}
+.button--light {
+  border: 1px solid var(--light-color);
+  background-color: transparent;
+}
+.button:hover,
+.button:focus {
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.35);
+}
+.button:focus {
+  outline-offset: 4px;
+  outline-color: var(--active-color);
+}
+.button:active {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

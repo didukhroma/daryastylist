@@ -3,7 +3,6 @@
 }
 
 .img-wrapper {
-  min-width: 351px;
   margin-bottom: 24px;
   background-color: var(--placeholder-img-color);
 }
