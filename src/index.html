@@ -24,7 +24,11 @@
     <load ="partials/header.html" />
     <load ="partials/main.html" />
     <load ="partials/footer.html" />
-
+    <script>
+      if (global === undefined) {
+        var global = window;
+      }
+    </script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
