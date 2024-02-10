@@ -1,0 +1,29 @@
+.map-section {
+  padding: 56px 0 0;
+
+  background-color: var(--light-color);
+}
+.map-section .container {
+  margin-bottom: 36px;
+}
+.map-list {
+  text-align: center;
+}
+.map-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.map-text {
+  color: rgb(0, 0, 0);
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  line-height: 1.22;
+}
+.map-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  height: 390px;
+}
+.iframe-map {
+  width: 100%;
+  height: 100%;
+}

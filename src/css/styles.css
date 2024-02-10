@@ -12,6 +12,9 @@
 @import url('./about.css');
 @import url('./portfolio.css');
 @import url('./price.css');
+@import url('./map.css');
+@import url('./footer.css');
+
 :root {
   font-family: var(--main-font-family);
   font-size: 16px;
@@ -20,11 +23,11 @@
 
   color: #242424;
 
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
 }
 body {
   background-color: var(--bg-color);
