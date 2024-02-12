@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/daryastylist/assets/index-5c592dad.js"></script>
-    <link rel="stylesheet" href="/daryastylist/assets/index-8ec21aba.css">
+    <script type="module" crossorigin src="/daryastylist/assets/index-9bac84c6.js"></script>
+    <link rel="stylesheet" href="/daryastylist/assets/index-cabf3b14.css">
   </head>
   <body>
     <header class="header">
@@ -28,76 +28,119 @@
     <nav class="nav">
       <a href="./index.html" class="nav-logo" title="logo">
         <svg class="nav-logo-icon">
-          <use href="/daryastylist/assets/sprite-f73c7b97.svg#logo-icon"></use>
+          <use href="/daryastylist/assets/sprite-ead7ceef.svg#logo-icon"></use>
         </svg>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#about" class="nav-link">Про мене</a>
-        </li>
 
-        <li class="nav-item">
-          <a href="#portfolio" class="nav-link">Портфоліо</a>
-        </li>
-        <li class="nav-item">
-          <a href="#price" class="nav-link">Прайс</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contacts" class="nav-link">Контакти</a>
-        </li>
-      </ul>
+      <button
+        class="menu-btn js-open-menu"
+        type="button"
+        title="open mobile menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Menu open button"
+        data-menu-open-btn
+      >
+        <svg class="" width="20" height="20">
+          <use href="/daryastylist/assets/sprite-ead7ceef.svg#menu-open-icon"></use>
+        </svg>
+      </button>
+      <div class="mobile-backdrop js-menu-container">
+        <div class="menu-container">
+          <button
+            class="menu-btn menu-close-btn js-close-menu"
+            type="button"
+            title="close mobile menu"
+          >
+            <svg class="" width="20" height="20">
+              <use href="/daryastylist/assets/sprite-ead7ceef.svg#menu-close-icon"></use>
+            </svg>
+          </button>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#about" class="nav-link js-close-menu">Про мене</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link js-close-menu">Портфоліо</a>
+            </li>
+            <li class="nav-item">
+              <a href="#price" class="nav-link js-close-menu">Прайс</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link js-close-menu">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
 
     <main>
-  <section class="hero">
+  <!-- HERO -->
+<section class="hero">
   <div class="hero-wrapper">
     <div class="container">
-      <h1 class="hero-title visually-hidden">Hairstylist Darya</h1>
+      <h1 class="hero-title">Hairstylist Darya</h1>
       <p class="hero-description">
-        Фарбування будь якої складності!Стрижки, догляд та відновлення волосся.
+        Фарбування будь якої складності! Стрижки, догляд та відновлення волосся.
       </p>
-      <button class="visually-hidden" type="button">ЗАПИСАТИСЯ</button>
+      <button class="button hero-button" type="button">ЗАПИСАТИСЯ</button>
     </div>
   </div>
 </section>
 
   <!-- ABOUT -->
-<section class="about-section">
+<section class="about-section" id="about">
   <div class="container">
-    <h2 class="section-title section-title-light">Про мене</h2>
-    <div class="img-wrapper">
-      <img
-        srcset="/daryastylist/assets/about-1465b3c5.jpg 1x, /daryastylist/assets/about@2x-2f9cf01a.jpg 2x"
-        src="/daryastylist/assets/about-1465b3c5.jpg"
-        alt="site owner photo"
-        loading="lazy"
-      />
+    <h2 class="section-title section-title-light about-title">Про мене</h2>
+    <div class="about-thumb">
+      <div class="img-wrapper">
+        <div class="about-img-thumb">
+          <picture class="about-image">
+            <source
+              srcset="/daryastylist/assets/about-desktop-e776cdbe.jpg 1x, /daryastylist/assets/about-desktop@2x-40f01fda.jpg 2x"
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="/daryastylist/assets/about-1465b3c5.jpg 1x, /daryastylist/assets/about@2x-2f9cf01a.jpg 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              src="/daryastylist/assets/about-1465b3c5.jpg"
+              alt="site owner photo"
+              aria-label="site owner photo"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+      <ul class="about-list">
+        <li class="about-list-item">
+          <p class="about-list-description">
+            Lorem ipsum dolor sit amet consectetur. Id accumsan tellus risus
+            quis. In nunc metus lectus donec consectetur molestie. Ac
+            pellentesque nibh porttitor metus massa egestas diam in. Donec proin
+            mattis integer risus consectetur.
+          </p>
+        </li>
+        <li class="about-list-item">
+          <p class="about-list-description">
+            Lorem ipsum dolor sit amet consectetur. Id accumsan tellus risus
+            quis. In nunc metus lectus donec consectetur molestie. Ac
+            pellentesque nibh porttitor metus massa egestas diam in. Donec proin
+            mattis integer risus consectetur.
+          </p>
+        </li>
+      </ul>
     </div>
-    <ul class="about-list">
-      <li class="about-list-item">
-        <p class="about-list-description">
-          Lorem ipsum dolor sit amet consectetur. Id accumsan tellus risus quis.
-          In nunc metus lectus donec consectetur molestie. Ac pellentesque nibh
-          porttitor metus massa egestas diam in. Donec proin mattis integer
-          risus consectetur.
-        </p>
-      </li>
-      <li class="about-list-item">
-        <p class="about-list-description">
-          Lorem ipsum dolor sit amet consectetur. Id accumsan tellus risus quis.
-          In nunc metus lectus donec consectetur molestie. Ac pellentesque nibh
-          porttitor metus massa egestas diam in. Donec proin mattis integer
-          risus consectetur.
-        </p>
-      </li>
-    </ul>
   </div>
 </section>
 
   <!-- PORTFOLIO -->
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
   <div class="container">
     <h2 class="section-title section-title-dark section-title-portfolio">
       Портфоліо
@@ -310,7 +353,7 @@
 
   <!-- PRICE -->
 
-<section class="price">
+<section class="price" id="price">
   <div class="container">
     <h2 class="section-title-price">Прайс</h2>
 
@@ -493,7 +536,7 @@
 </main>
 
     <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer" id="contacts">
   <div class="container">
     <div class="footer-wrapper">
       <div class="contacts-wrapper">
@@ -515,42 +558,42 @@
               rel="noopener noreferrer"
             >
               <svg width="20" height="20">
-                <use href="/daryastylist/assets/sprite-f73c7b97.svg#booksy-icon"></use>
+                <use href="/daryastylist/assets/sprite-ead7ceef.svg#booksy-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
             <a class="socials-list-link" href="https://www.instagram.com/">
               <svg width="20" height="20">
-                <use href="/daryastylist/assets/sprite-f73c7b97.svg#instagram-icon"></use>
+                <use href="/daryastylist/assets/sprite-ead7ceef.svg#instagram-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
             <a class="socials-list-link" href="https://www.facebook.com/">
               <svg width="20" height="20">
-                <use href="/daryastylist/assets/sprite-f73c7b97.svg#facebook-icon"></use>
+                <use href="/daryastylist/assets/sprite-ead7ceef.svg#facebook-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
             <a class="socials-list-link" href="https://www.viber.com/en/">
               <svg width="20" height="20">
-                <use href="/daryastylist/assets/sprite-f73c7b97.svg#viber-icon"></use>
+                <use href="/daryastylist/assets/sprite-ead7ceef.svg#viber-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
             <a class="socials-list-link" href="https://www.viber.com/en/">
               <svg width="20" height="20">
-                <use href="/daryastylist/assets/sprite-f73c7b97.svg#whatsapp-icon"></use>
+                <use href="/daryastylist/assets/sprite-ead7ceef.svg#whatsapp-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
             <a class="socials-list-link" href="https://web.telegram.org/a/">
               <svg width="20" height="20">
-                <use href="/daryastylist/assets/sprite-f73c7b97.svg#telegram-icon"></use>
+                <use href="/daryastylist/assets/sprite-ead7ceef.svg#telegram-icon"></use>
               </svg>
             </a>
           </li>
