@@ -1,32 +1,49 @@
 <!-- ABOUT -->
-<section class="about-section">
+<section class="about-section" id="about">
   <div class="container">
-    <h2 class="section-title section-title-light">Про мене</h2>
-    <div class="img-wrapper">
-      <img
-        srcset="./img/about/about.jpg 1x, ./img/about/about@2x.jpg 2x"
-        src="./img/about/about.jpg"
-        alt="site owner photo"
-        loading="lazy"
-      />
+    <h2 class="section-title section-title-light about-title">Про мене</h2>
+    <div class="about-thumb">
+      <div class="img-wrapper">
+        <div class="about-img-thumb">
+          <picture class="about-image">
+            <source
+              srcset="
+                ./img/about/about-desktop.jpg    1x,
+                ./img/about/about-desktop@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="./img/about/about.jpg 1x, ./img/about/about@2x.jpg 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              src="./img/about/about.jpg"
+              alt="site owner photo"
+              aria-label="site owner photo"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+      <ul class="about-list">
+        <li class="about-list-item">
+          <p class="about-list-description">
+            Lorem ipsum dolor sit amet consectetur. Id accumsan tellus risus
+            quis. In nunc metus lectus donec consectetur molestie. Ac
+            pellentesque nibh porttitor metus massa egestas diam in. Donec proin
+            mattis integer risus consectetur.
+          </p>
+        </li>
+        <li class="about-list-item">
+          <p class="about-list-description">
+            Lorem ipsum dolor sit amet consectetur. Id accumsan tellus risus
+            quis. In nunc metus lectus donec consectetur molestie. Ac
+            pellentesque nibh porttitor metus massa egestas diam in. Donec proin
+            mattis integer risus consectetur.
+          </p>
+        </li>
+      </ul>
     </div>
-    <ul class="about-list">
-      <li class="about-list-item">
-        <p class="about-list-description">
-          Lorem ipsum dolor sit amet consectetur. Id accumsan tellus risus quis.
-          In nunc metus lectus donec consectetur molestie. Ac pellentesque nibh
-          porttitor metus massa egestas diam in. Donec proin mattis integer
-          risus consectetur.
-        </p>
-      </li>
-      <li class="about-list-item">
-        <p class="about-list-description">
-          Lorem ipsum dolor sit amet consectetur. Id accumsan tellus risus quis.
-          In nunc metus lectus donec consectetur molestie. Ac pellentesque nibh
-          porttitor metus massa egestas diam in. Donec proin mattis integer
-          risus consectetur.
-        </p>
-      </li>
-    </ul>
   </div>
 </section>

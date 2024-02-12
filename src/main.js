@@ -1,2 +1,2 @@
-import './js/openMore';
 import './js/portfolio';
+import './js/mobileMenu';
