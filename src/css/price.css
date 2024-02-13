@@ -1,25 +1,41 @@
+/* section */
 .price {
   padding: 68px 0 106px;
   color: var(--light-color);
 }
-.section-title-price {
-  margin-bottom: 19px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.2;
-  text-align: center;
-  color: var(--light-color);
+/* title */
+.price .price-title {
+  margin-bottom: 42px;
 }
+/* main list */
 .price-list {
   counter-reset: count;
   margin-bottom: 42px;
 }
+@media screen and (min-width: 768px) {
+  .price-list {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .price-list {
+    max-width: 668px;
+  }
+}
+/*main list item */
 .price-list-item {
   counter-increment: count;
 }
 .price-list-item:not(:last-child) {
   margin-bottom: 44px;
 }
+@media screen and (min-width: 768px) {
+  .price-list-item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+/* item title wrapper */
 .price-list-title-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -28,11 +44,22 @@
   margin-bottom: 12px;
   padding-bottom: 16px;
 }
+@media screen and (min-width: 1440px) {
+  .price-list-title-wrapper {
+    margin-bottom: 14px;
+  }
+}
+/* subtitle */
 .price-list-subtitle {
   flex-basis: 100%;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.22;
+}
+@media screen and (min-width: 768px) {
+  .price-list-subtitle {
+    font-size: 24px;
+  }
 }
 .price-list-subtitle::before {
   content: '0' counter(count);
@@ -42,7 +69,12 @@
 .price-list-item:nth-child(odd) .price-list-subtitle {
   text-align: right;
 }
-
+@media screen and (min-width: 768px) {
+  .price-list-item:nth-child(odd) .price-list-subtitle {
+    text-align: left;
+  }
+}
+/* description item */
 .price-description-item {
   display: flex;
   align-items: flex-end;
@@ -51,17 +83,42 @@
 
   padding: 0 16px;
 }
+@media screen and (min-width: 768px) {
+  .price-description-item {
+    padding: 0;
+  }
+}
 .price-description-item:not(:last-child) {
   margin-bottom: 12px;
 }
+@media screen and (min-width: 768px) {
+  .price-description-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+/* description text */
 .description-text {
   font-size: 16px;
   line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  .description-text {
+    font-size: 20px;
+    padding-right: 40px;
+  }
 }
 .description-text--opt {
   flex-basis: 100%;
   margin-bottom: -2px;
 }
+@media screen and (min-width: 768px) {
+  .description-text--opt {
+    font-size: 20px;
+    flex-basis: content;
+  }
+}
+/* description line */
 .description-line {
   position: relative;
   flex-grow: 1;
@@ -74,10 +131,23 @@
   width: 100%;
   border: 1px dashed rgb(163, 155, 155);
 }
+@media screen and (min-width: 768px) {
+  .description-line::after {
+    bottom: 10px;
+  }
+}
+/* description price */
 .description-price {
   font-family: var(--secondary-font-family);
   font-size: 14px;
   line-height: 1.21;
+}
+@media screen and (min-width: 768px) {
+  .description-price {
+    font-size: 20px;
+    flex-basis: 120px;
+    text-align: right;
+  }
 }
 
 .subtitle-list {
@@ -91,16 +161,30 @@
     row-gap: 8px;
   }
 }
+@media screen and (min-width: 768px) {
+  .subtitle-list {
+    padding: 0;
+  }
+}
 .subtitle-list-text {
   padding: 0 10px;
   font-family: var(--secondary-font-family);
   font-size: 14px;
   line-height: 1.21;
 }
+@media screen and (min-width: 768px) {
+  .subtitle-list-text {
+    padding: 0 22px;
+    font-size: 18px;
+  }
+  .subtitle-list-item:first-child .subtitle-list-text {
+    padding: 0 22px 0 0;
+  }
+}
 .subtitle-list-item:not(:last-child) {
   border-right: 1px solid var(--light-color);
 }
-
+/* group title */
 .price-list-group-title {
   margin-bottom: 12px;
   padding: 0 27px 0 51px;
@@ -111,6 +195,34 @@
 .price-list-group-title--secondary {
   text-align: right;
 }
+@media screen and (min-width: 768px) {
+  .price-list-group-title {
+    padding: 0;
+    margin-bottom: 24px;
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
 .price-list-group {
   margin-bottom: 24px;
+}
+
+/* text wrapper optional */
+@media screen and (min-width: 768px) {
+  .text-wrapper {
+    display: flex;
+    gap: 4px;
+  }
+}
+
+/* button */
+.price .price-button {
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1440px) {
+  .price .price-button {
+    margin: 0;
+  }
 }

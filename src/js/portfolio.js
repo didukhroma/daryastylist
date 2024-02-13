@@ -10,12 +10,12 @@ const settingsSimpleLightbox = {
   srcImage: 'src',
 };
 
-const galleryLightBox = new SimpleLightbox(settingsSimpleLightbox.selector, {
-  sourceAttr: settingsSimpleLightbox.srcImage,
-  captionsData: settingsSimpleLightbox.caption,
-  captionDelay: 250,
-  animationSpeed: 500,
-});
+// const galleryLightBox = new SimpleLightbox(settingsSimpleLightbox.selector, {
+//   sourceAttr: settingsSimpleLightbox.srcImage,
+//   captionsData: settingsSimpleLightbox.caption,
+//   captionDelay: 250,
+//   animationSpeed: 500,
+// });
 
 const handleClick = () => {
   if (button.textContent === 'Показати більше') {
@@ -32,11 +32,11 @@ const handleClick = () => {
   });
 };
 
-const openModal = e => {
-  if (e.target === e.currentTarget) return;
-  galleryLightBox.on();
-};
+// const openModal = e => {
+//   if (e.target === e.currentTarget) return;
+//   // galleryLightBox.on();
+// };
 
-button.addEventListener('click', handleClick);
+// button.addEventListener('click', handleClick);
 
-portfolio.addEventListener('click', openModal);
+// portfolio.addEventListener('click', openModal);
