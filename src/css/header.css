@@ -9,6 +9,8 @@
   align-items: center;
 }
 .nav-logo {
+  position: relative;
+  display: block;
   background-color: inherit;
   border: none;
   transform: scale(1);
@@ -43,10 +45,18 @@
   margin-bottom: 93px;
 }
 .nav-link {
+  display: block;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
+  transform: scale(1);
+  transition: transform var(--animation-fast);
 }
+.nav-link:hover,
+.nav-link:focus {
+  transform: scale(1.05);
+}
+
 .mobile-backdrop {
   position: fixed;
   top: 0;
